@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transform: translateY(20%);
+
+  @media (prefers-reduced-motion: no-preference) {
+    transition: opacity 0.75s ease, transform 0.75s ease;
+  }
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0%);
+}

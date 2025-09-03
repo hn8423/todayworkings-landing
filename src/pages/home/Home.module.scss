@@ -1,0 +1,377 @@
+// Home Page Container
+.home_container {
+  width: 100%;
+}
+
+// Container
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+// Hero Section
+.hero_section {
+  background: linear-gradient(135deg, #3988ff 0%, #2563eb 100%);
+  color: white;
+  padding: 120px 0;
+  text-align: center;
+}
+
+.hero_content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero_badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.hero_title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin: 0 0 20px 0;
+}
+
+.hero_subtitle {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+  color: #f0f8ff;
+}
+
+.hero_description {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  color: #e0e7ff;
+}
+
+// Problem Section
+.problem_section {
+  padding: 100px 0;
+  background-color: white;
+  text-align: center;
+}
+
+.section_title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.4;
+  margin: 0 0 30px 0;
+}
+
+.highlight {
+  color: #3988ff;
+}
+
+.section_description {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+  margin: 0 0 20px 0;
+}
+
+.section_subdescription {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+  margin: 0 0 10px 0;
+}
+
+.notice {
+  font-size: 14px;
+  color: #888;
+  margin: 0;
+  font-style: italic;
+}
+
+.contact_button {
+  background-color: #3988ff;
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 30px;
+
+  &:hover {
+    background-color: #2563eb;
+    transform: translateY(-2px);
+  }
+}
+
+// Features Section
+.features_section {
+  padding: 100px 0;
+  background-color: #f8fafc;
+}
+
+.features_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.feature_item {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.feature_number {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background-color: #3988ff;
+  color: white;
+  border-radius: 50%;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 60px;
+  margin-bottom: 20px;
+}
+
+.feature_title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a1a1a;
+  line-height: 1.4;
+  margin: 0;
+}
+
+// Benefits Section
+.benefits_section {
+  padding: 100px 0;
+  background-color: white;
+  text-align: center;
+}
+
+// Statistics Section
+.statistics_section {
+  padding: 100px 0;
+  background-color: #f8fafc;
+  text-align: center;
+}
+
+.stats_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.stat_item {
+  background: white;
+  padding: 40px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.stat_title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 20px 0;
+}
+
+.stat_value {
+  font-size: 48px;
+  font-weight: 700;
+  color: #3988ff;
+  margin: 0;
+}
+
+// Data Section
+.data_section {
+  padding: 100px 0;
+  background-color: white;
+  text-align: center;
+}
+
+.comparison {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 60px;
+}
+
+.comparison_item {
+  flex: 1;
+  max-width: 300px;
+}
+
+.comparison_title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #666;
+  margin: 0 0 20px 0;
+}
+
+.comparison_value {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.comparison_vs {
+  font-size: 24px;
+  font-weight: 700;
+  color: #3988ff;
+  flex-shrink: 0;
+}
+
+// Partnership Section
+.partnership_section {
+  padding: 100px 0;
+  background-color: #f8fafc;
+  text-align: center;
+}
+
+.partners_grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.partner_item {
+  background: white;
+  padding: 40px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.partner_logo {
+  font-size: 14px;
+  font-weight: 600;
+  color: #666;
+}
+
+// Responsive Design
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 30px;
+  }
+
+  .features_grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .stats_grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .partners_grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .comparison {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .hero_section {
+    padding: 80px 0;
+  }
+
+  .hero_title {
+    font-size: 32px;
+  }
+
+  .hero_subtitle {
+    font-size: 20px;
+  }
+
+  .section_title {
+    font-size: 28px;
+  }
+
+  .features_grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .stats_grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .partners_grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .problem_section,
+  .features_section,
+  .benefits_section,
+  .statistics_section,
+  .data_section,
+  .partnership_section {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero_title {
+    font-size: 24px;
+  }
+
+  .hero_subtitle {
+    font-size: 18px;
+  }
+
+  .section_title {
+    font-size: 24px;
+  }
+
+  .section_description {
+    font-size: 16px;
+  }
+
+  .feature_item {
+    padding: 30px 20px;
+  }
+
+  .stat_value {
+    font-size: 36px;
+  }
+
+  .partners_grid {
+    grid-template-columns: 1fr;
+  }
+}

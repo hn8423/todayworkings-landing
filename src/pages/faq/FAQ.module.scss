@@ -1,0 +1,372 @@
+// FAQ Page Container
+.faq_container {
+  width: 100%;
+}
+
+// Container
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+// Hero Section
+.hero_section {
+  background: linear-gradient(135deg, #3988ff 0%, #2563eb 100%);
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero_title {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0;
+}
+
+// FAQ Section
+.faq_section {
+  padding: 100px 0;
+  background-color: white;
+}
+
+.faq_list {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.faq_item {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.faq_question {
+  padding: 25px 30px;
+  cursor: pointer;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #f8fafc;
+  }
+}
+
+.question_text {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0;
+  flex: 1;
+  line-height: 1.4;
+}
+
+.question_meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+.question_date {
+  font-size: 14px;
+  color: #6b7280;
+  font-weight: 400;
+}
+
+.toggle_icon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3988ff;
+  color: white;
+  border-radius: 50%;
+  font-size: 18px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  &.open {
+    background-color: #dc2626;
+    transform: rotate(180deg);
+  }
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &.open:hover {
+    transform: scale(1.1) rotate(180deg);
+  }
+}
+
+.faq_answer {
+  border-top: 1px solid #e5e7eb;
+  background-color: #f8fafc;
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 1000px;
+  }
+}
+
+.answer_content {
+  padding: 30px;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #374151;
+
+  p {
+    margin: 0 0 20px 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  strong {
+    color: #1a1a1a;
+    font-weight: 600;
+  }
+}
+
+// Special Content Styles
+.info_box {
+  background-color: #e0f2fe;
+  border: 1px solid #0891b2;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.guest_account {
+  background-color: #f0f9ff;
+  border: 1px solid #3988ff;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+  font-size: 15px;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.case_section {
+  margin: 25px 0;
+  padding: 20px;
+  background-color: #f9fafb;
+  border-radius: 8px;
+  border-left: 4px solid #3988ff;
+
+  h4 {
+    margin: 0 0 15px 0;
+    color: #1a1a1a;
+    font-size: 16px;
+  }
+
+  p {
+    margin: 8px 0;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+}
+
+.law_analysis {
+  background-color: #fefefe;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 25px;
+  margin: 20px 0;
+
+  ul {
+    margin: 0;
+    padding-left: 20px;
+    list-style-type: disc;
+
+    li {
+      margin: 12px 0;
+      font-size: 15px;
+      line-height: 1.7;
+      color: #374151;
+    }
+  }
+}
+
+// Contact Section
+.contact_section {
+  padding: 100px 0;
+  background-color: #f8fafc;
+  text-align: center;
+}
+
+.section_title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.4;
+  margin: 0 0 20px 0;
+}
+
+.contact_subtitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin: 20px 0 40px 0;
+}
+
+.contact_button {
+  background-color: #3988ff;
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #2563eb;
+    transform: translateY(-2px);
+  }
+}
+
+// Responsive Design
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 30px;
+  }
+
+  .question_text {
+    font-size: 18px;
+  }
+
+  .faq_question {
+    padding: 20px 25px;
+  }
+
+  .answer_content {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .hero_section {
+    padding: 80px 0;
+  }
+
+  .hero_title {
+    font-size: 32px;
+  }
+
+  .faq_section {
+    padding: 60px 0;
+  }
+
+  .faq_question {
+    padding: 20px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .question_meta {
+    flex-direction: row;
+    align-items: center;
+    margin-left: 0;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .question_text {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .answer_content {
+    padding: 20px;
+    font-size: 15px;
+  }
+
+  .section_title {
+    font-size: 28px;
+  }
+
+  .contact_subtitle {
+    font-size: 20px;
+  }
+
+  .contact_section {
+    padding: 60px 0;
+  }
+
+  .info_box,
+  .guest_account,
+  .case_section,
+  .law_analysis {
+    padding: 15px;
+    margin: 15px 0;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero_title {
+    font-size: 24px;
+  }
+
+  .question_text {
+    font-size: 15px;
+  }
+
+  .faq_question {
+    padding: 15px;
+  }
+
+  .answer_content {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .section_title {
+    font-size: 24px;
+  }
+
+  .contact_subtitle {
+    font-size: 18px;
+  }
+
+  .toggle_icon {
+    width: 25px;
+    height: 25px;
+    font-size: 16px;
+  }
+
+  .contact_button {
+    padding: 12px 30px;
+    font-size: 16px;
+  }
+}
