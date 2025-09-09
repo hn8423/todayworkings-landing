@@ -118,7 +118,10 @@ export default function FAQ() {
             <strong>4. 출퇴근</strong>
           </p>
           <p>
-            <strong>5. 백오피스(www.todayworkings.com) 접근 권한</strong>
+            <strong>
+              5. 백오피스(https://backoffice.todayworkings.com/dashboard) 접근
+              권한
+            </strong>
           </p>
           <p>
             <strong>6. 공지사항 관리, 민원관리 등</strong>
