@@ -5,7 +5,6 @@ interface FAQItem {
   id: number;
   question: string;
   answer: string | React.ReactElement;
-  date: string;
 }
 
 export default function FAQ() {
@@ -21,9 +20,8 @@ export default function FAQ() {
     {
       id: 1,
       question: "Q. 계약 절차는 어떻게 되나요?",
-      date: "2024-10-14",
       answer: (
-        <div>
+        <div className={styles.answer_content}>
           <p>
             <strong>1. 문의하기 또는 메일, 고객센터</strong>로 연락해주세요
           </p>
@@ -67,9 +65,8 @@ export default function FAQ() {
     {
       id: 2,
       question: "Q. 현장 세팅 기간은 어떻게 되나요?",
-      date: "2024-10-14",
       answer: (
-        <div>
+        <div className={styles.answer_content}>
           <p>
             요청하신 현장 서류 개수 및 종류에 따라 상이하지만,
             <br />
@@ -91,9 +88,8 @@ export default function FAQ() {
     {
       id: 3,
       question: "Q. 오늘의작업장 무료체험은 어떻게 하나요?",
-      date: "2024-10-14",
       answer: (
-        <div>
+        <div className={styles.answer_content}>
           <p>
             오늘의작업장 플랫폼 체험을 위해 게스트 계정을 제공하고 있습니다.
           </p>
@@ -134,9 +130,8 @@ export default function FAQ() {
       id: 4,
       question:
         "Q. 오늘의작업장 APP 다운 받고 회원가입 했습니다. 그 다음은 어떻게 진행하나요?",
-      date: "2024-10-14",
       answer: (
-        <div>
+        <div className={styles.answer_content}>
           <div className={styles.case_section}>
             <h4>
               <strong>1. 계약 된 회사인 경우</strong>
@@ -162,23 +157,14 @@ export default function FAQ() {
             </p>
             <p>- 관리자 체험은 게스트 계정을 이용해주시길 바랍니다</p>
           </div>
-
-          <div className={styles.guest_account}>
-            <strong>[게스트 계정]</strong>
-            <br />
-            <strong>아이디 : GUEST</strong>
-            <br />
-            <strong>비밀번호 : 123456</strong>
-          </div>
         </div>
       ),
     },
     {
       id: 5,
       question: "Q. 중대재해처벌법에 대해 대응(대처)이 가능할까요?",
-      date: "2024-10-14",
       answer: (
-        <div>
+        <div className={styles.answer_content}>
           <p>
             먼저 오늘의작업장은 중대재해처벌법의 판례문에 대해 지속적으로 내용
             업데이트 및 분석을 하고 있습니다.
@@ -272,9 +258,8 @@ export default function FAQ() {
     {
       id: 6,
       question: "Q. APP에서 서류 작성한 건 어떻게 다운받나요?",
-      date: "2024-10-14",
       answer: (
-        <div>
+        <div className={styles.answer_content}>
           <p>
             오늘의작업장은 현장에서 수기로 작성되던 서류를 디지털화로 바꾸는
             서비스를 제공하고 있습니다.
@@ -316,7 +301,9 @@ export default function FAQ() {
       {/* Hero Section */}
       <section className={styles.hero_section}>
         <div className={styles.container}>
-          <h1 className={styles.hero_title}>자주 묻는 질문 FAQ</h1>
+          <h1 className={styles.hero_title}>
+            자주 묻는 질문 <span className={styles.highlight_text}>FAQ</span>
+          </h1>
         </div>
       </section>
 
@@ -331,16 +318,13 @@ export default function FAQ() {
                   onClick={() => toggleItem(item.id)}
                 >
                   <h3 className={styles.question_text}>{item.question}</h3>
-                  <div className={styles.question_meta}>
-                    <span className={styles.question_date}>{item.date}</span>
-                    <span
-                      className={`${styles.toggle_icon} ${
-                        openItems.includes(item.id) ? styles.open : ""
-                      }`}
-                    >
-                      {openItems.includes(item.id) ? "−" : "+"}
-                    </span>
-                  </div>
+                  <span
+                    className={`${styles.toggle_icon} ${
+                      openItems.includes(item.id) ? styles.open : ""
+                    }`}
+                  >
+                    {openItems.includes(item.id) ? "−" : "+"}
+                  </span>
                 </div>
 
                 {openItems.includes(item.id) && (
@@ -351,15 +335,6 @@ export default function FAQ() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Contact Section */}
-      <section className={styles.contact_section}>
-        <div className={styles.container}>
-          <h2 className={styles.section_title}>궁금한 점이 있다면</h2>
-          <h3 className={styles.contact_subtitle}>언제든지 연락 주세요</h3>
-          <button className={styles.contact_button}>문의하기</button>
         </div>
       </section>
     </div>
