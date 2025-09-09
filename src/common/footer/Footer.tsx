@@ -1,5 +1,5 @@
 import styles from "./Footer.module.scss";
-
+import { useNavigate } from "react-router-dom";
 import InstagramIcon from "../../assets/icons/instagram.svg?react";
 import BlogIcon from "../../assets/icons/blog.svg?react";
 import FacebookIcon from "../../assets/icons/facebook.svg?react";
@@ -7,6 +7,7 @@ import LinkedInIcon from "../../assets/icons/linked-in.svg?react";
 import YoutubeIcon from "../../assets/icons/youtube.svg?react";
 
 export default function Footer() {
+  const navigate = useNavigate();
   return (
     <footer className={styles.footer_container}>
       {/* 메인 푸터 섹션 - 파란색 배경 */}
@@ -19,7 +20,12 @@ export default function Footer() {
               <br />
               언제든지 연락 주세요
             </h2>
-            <button className={styles.contact_button}>문의하기</button>
+            <button
+              className={styles.contact_button}
+              onClick={() => navigate("/contact")}
+            >
+              문의하기
+            </button>
           </div>
 
           {/* 오른쪽: 연락처 정보 */}

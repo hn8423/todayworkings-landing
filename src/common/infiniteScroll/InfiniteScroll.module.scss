@@ -1,0 +1,90 @@
+.infinite_scroll_container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background: transparent;
+}
+
+.infinite_scroll_track {
+  display: flex;
+  animation: scroll-left linear infinite;
+  will-change: transform;
+
+  &.reverse {
+    animation-name: scroll-right;
+  }
+}
+
+.scroll_item {
+  flex-shrink: 0;
+}
+
+.image_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  padding: 30px 20px;
+
+  transition: all 0.3s ease;
+  min-width: 300px;
+  min-height: 200px;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.partner_image {
+  max-width: 140px;
+  max-height: 80px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+
+  .image_wrapper:hover & {
+    transform: scale(1.05);
+  }
+}
+
+// 무한 스크롤 애니메이션
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+// 반응형 디자인
+@media (max-width: 768px) {
+  .infinite_scroll_container {
+    &::before,
+    &::after {
+      width: 50px;
+    }
+  }
+
+  .image_wrapper {
+    padding: 20px 15px;
+    min-width: 150px;
+    min-height: 100px;
+  }
+
+  .partner_image {
+    max-width: 120px;
+    max-height: 60px;
+  }
+}

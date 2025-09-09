@@ -28,11 +28,13 @@ const RAW_RUNTIME_STATE =
       [null, {\
         "packageLocation": "./",\
         "packageDependencies": [\
+          ["@emailjs/browser", "npm:4.4.1"],\
           ["@eslint/js", "npm:9.34.0"],\
           ["@types/react", "npm:19.1.12"],\
           ["@types/react-dom", "virtual:22d20750fa8a654c529da88929c117154f1371ccb22841d38c9f4e31cbdb02e97cc5679e6e02626ed88f5853f1e37b16dda242b3de1261a57f1da579635e18cc#npm:19.1.9"],\
           ["@vitejs/plugin-react", "virtual:22d20750fa8a654c529da88929c117154f1371ccb22841d38c9f4e31cbdb02e97cc5679e6e02626ed88f5853f1e37b16dda242b3de1261a57f1da579635e18cc#npm:5.0.2"],\
           ["@yarnpkg/sdks", "npm:3.2.3"],\
+          ["date-fns", "npm:4.1.0"],\
           ["eslint", "virtual:22d20750fa8a654c529da88929c117154f1371ccb22841d38c9f4e31cbdb02e97cc5679e6e02626ed88f5853f1e37b16dda242b3de1261a57f1da579635e18cc#npm:9.34.0"],\
           ["eslint-plugin-react-hooks", "virtual:22d20750fa8a654c529da88929c117154f1371ccb22841d38c9f4e31cbdb02e97cc5679e6e02626ed88f5853f1e37b16dda242b3de1261a57f1da579635e18cc#npm:5.2.0"],\
           ["eslint-plugin-react-refresh", "virtual:22d20750fa8a654c529da88929c117154f1371ccb22841d38c9f4e31cbdb02e97cc5679e6e02626ed88f5853f1e37b16dda242b3de1261a57f1da579635e18cc#npm:0.4.20"],\
@@ -327,6 +329,15 @@ const RAW_RUNTIME_STATE =
           ["@babel/helper-string-parser", "npm:7.27.1"],\
           ["@babel/helper-validator-identifier", "npm:7.27.1"],\
           ["@babel/types", "npm:7.28.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@emailjs/browser", [\
+      ["npm:4.4.1", {\
+        "packageLocation": "../../../.yarn/berry/cache/@emailjs-browser-npm-4.4.1-64a2cb04f8-10c0.zip/node_modules/@emailjs/browser/",\
+        "packageDependencies": [\
+          ["@emailjs/browser", "npm:4.4.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -2491,6 +2502,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["date-fns", [\
+      ["npm:4.1.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/date-fns-npm-4.1.0-764604ee0f-10c0.zip/node_modules/date-fns/",\
+        "packageDependencies": [\
+          ["date-fns", "npm:4.1.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["debug", [\
       ["npm:4.4.1", {\
         "packageLocation": "../../../.yarn/berry/cache/debug-npm-4.4.1-6eab84b9f7-10c0.zip/node_modules/debug/",\
@@ -4620,11 +4640,13 @@ const RAW_RUNTIME_STATE =
       ["workspace:.", {\
         "packageLocation": "./",\
         "packageDependencies": [\
+          ["@emailjs/browser", "npm:4.4.1"],\
           ["@eslint/js", "npm:9.34.0"],\
           ["@types/react", "npm:19.1.12"],\
           ["@types/react-dom", "virtual:22d20750fa8a654c529da88929c117154f1371ccb22841d38c9f4e31cbdb02e97cc5679e6e02626ed88f5853f1e37b16dda242b3de1261a57f1da579635e18cc#npm:19.1.9"],\
           ["@vitejs/plugin-react", "virtual:22d20750fa8a654c529da88929c117154f1371ccb22841d38c9f4e31cbdb02e97cc5679e6e02626ed88f5853f1e37b16dda242b3de1261a57f1da579635e18cc#npm:5.0.2"],\
           ["@yarnpkg/sdks", "npm:3.2.3"],\
+          ["date-fns", "npm:4.1.0"],\
           ["eslint", "virtual:22d20750fa8a654c529da88929c117154f1371ccb22841d38c9f4e31cbdb02e97cc5679e6e02626ed88f5853f1e37b16dda242b3de1261a57f1da579635e18cc#npm:9.34.0"],\
           ["eslint-plugin-react-hooks", "virtual:22d20750fa8a654c529da88929c117154f1371ccb22841d38c9f4e31cbdb02e97cc5679e6e02626ed88f5853f1e37b16dda242b3de1261a57f1da579635e18cc#npm:5.2.0"],\
           ["eslint-plugin-react-refresh", "virtual:22d20750fa8a654c529da88929c117154f1371ccb22841d38c9f4e31cbdb02e97cc5679e6e02626ed88f5853f1e37b16dda242b3de1261a57f1da579635e18cc#npm:0.4.20"],\
