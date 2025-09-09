@@ -9,7 +9,7 @@ import Sign from "./pages/sign/Sign";
 import Backoffice from "./pages/backoffice/Backoffice";
 import Contact from "./pages/contact/Contact";
 import FAQ from "./pages/faq/FAQ";
-import Price from "./pages/price/Price";
+import Pricing from "./pages/pricing/Pricing";
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
         <Route path="/document" element={<Document />} />
         <Route path="/sign" element={<Sign />} />
         <Route path="/backoffice" element={<Backoffice />} />
-        <Route path="/price" element={<Price />} />
+        <Route path="/pricing" element={<Pricing />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/faq" element={<FAQ />} />
       </Routes>

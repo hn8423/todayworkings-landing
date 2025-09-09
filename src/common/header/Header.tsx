@@ -7,7 +7,13 @@ export default function Header() {
     <header className={styles.header_container}>
       <div className={styles.header_content}>
         {/* 로고 */}
-        <div className={styles.logo} onClick={() => navigate("/")}>
+        <div
+          className={styles.logo}
+          onClick={() => {
+            window.scrollTo(0, 0);
+            navigate("/");
+          }}
+        >
           <TodayworkingsLogo />
         </div>
 
@@ -20,7 +26,10 @@ export default function Header() {
               <div className={styles.dropdown_item}>
                 <button
                   className={styles.dropdown_button}
-                  onClick={() => navigate("/about")}
+                  onClick={() => {
+                    window.scrollTo(0, 0);
+                    navigate("/about");
+                  }}
                 >
                   ABOUT
                 </button>
@@ -34,7 +43,10 @@ export default function Header() {
               <div className={styles.dropdown_item}>
                 <button
                   className={styles.dropdown_button}
-                  onClick={() => navigate("/service")}
+                  onClick={() => {
+                    window.scrollTo(0, 0);
+                    navigate("/service");
+                  }}
                 >
                   오늘의작업장 기능
                 </button>
@@ -42,7 +54,10 @@ export default function Header() {
               <div className={styles.dropdown_item}>
                 <button
                   className={styles.dropdown_button}
-                  onClick={() => navigate("/document")}
+                  onClick={() => {
+                    window.scrollTo(0, 0);
+                    navigate("/document");
+                  }}
                 >
                   현장서류 관리
                 </button>
@@ -50,7 +65,10 @@ export default function Header() {
               <div className={styles.dropdown_item}>
                 <button
                   className={styles.dropdown_button}
-                  onClick={() => navigate("/sign")}
+                  onClick={() => {
+                    window.scrollTo(0, 0);
+                    navigate("/sign");
+                  }}
                 >
                   서명 및 결재
                 </button>
@@ -58,7 +76,10 @@ export default function Header() {
               <div className={styles.dropdown_item}>
                 <button
                   className={styles.dropdown_button}
-                  onClick={() => navigate("/backoffice")}
+                  onClick={() => {
+                    window.scrollTo(0, 0);
+                    navigate("/backoffice");
+                  }}
                 >
                   백오피스 기능
                 </button>
@@ -66,7 +87,10 @@ export default function Header() {
               <div className={styles.dropdown_item}>
                 <button
                   className={styles.dropdown_button}
-                  onClick={() => navigate("/price")}
+                  onClick={() => {
+                    window.scrollTo(0, 0);
+                    navigate("/pricing");
+                  }}
                 >
                   가격 안내
                 </button>
@@ -80,7 +104,9 @@ export default function Header() {
               <div className={styles.dropdown_item}>
                 <button
                   className={styles.dropdown_button}
-                  onClick={() => navigate("/contact")}
+                  onClick={() => {
+                    navigate("/contact");
+                  }}
                 >
                   CONTACT
                 </button>
@@ -88,7 +114,10 @@ export default function Header() {
               <div className={styles.dropdown_item}>
                 <button
                   className={styles.dropdown_button}
-                  onClick={() => navigate("/faq")}
+                  onClick={() => {
+                    window.scrollTo(0, 0);
+                    navigate("/faq");
+                  }}
                 >
                   고객 센터
                 </button>
