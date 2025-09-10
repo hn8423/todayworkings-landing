@@ -244,64 +244,21 @@ export default function Pricing() {
       <section className={styles.subscription_section}>
         <div className={styles.container}>
           <h2 className={styles.section_title}>
-            사용자 수 상관 없이, 쓰는 만큼만
+            <span className={styles.lowlight}>
+              사용자 수 상관 없이, 쓰는 만큼만
+            </span>
             <br />
             합리적인 오늘의작업장 연간 구독플랜
           </h2>
           <p className={styles.section_subtitle}>
             * 기본 스토리지 초과, 서류 커스터마이징 가격 별도
           </p>
-
-          <div className={styles.pricing_cards}>
-            <div className={styles.pricing_card}>
-              <div className={styles.card_header}>
-                <h3 className={styles.plan_name}>기본 플랜</h3>
-                <div className={styles.plan_price}>
-                  <span className={styles.price_amount}>문의</span>
-                  <span className={styles.price_period}>/ 년</span>
-                </div>
-              </div>
-              <div className={styles.card_features}>
-                <div className={styles.feature_item}>기본 현장서류 관리</div>
-                <div className={styles.feature_item}>모바일 앱 지원</div>
-                <div className={styles.feature_item}>웹 백오피스</div>
-                <div className={styles.feature_item}>기본 스토리지</div>
-              </div>
-            </div>
-
-            <div className={styles.pricing_card}>
-              <div className={styles.card_header}>
-                <h3 className={styles.plan_name}>스탠다드 플랜</h3>
-                <div className={styles.plan_price}>
-                  <span className={styles.price_amount}>문의</span>
-                  <span className={styles.price_period}>/ 년</span>
-                </div>
-              </div>
-              <div className={styles.card_features}>
-                <div className={styles.feature_item}>기본 플랜 모든 기능</div>
-                <div className={styles.feature_item}>커스터마이징 서류</div>
-                <div className={styles.feature_item}>확장 스토리지</div>
-                <div className={styles.feature_item}>우선 고객 지원</div>
-              </div>
-            </div>
-
-            <div className={styles.pricing_card}>
-              <div className={styles.card_header}>
-                <h3 className={styles.plan_name}>프리미엄 플랜</h3>
-                <div className={styles.plan_price}>
-                  <span className={styles.price_amount}>문의</span>
-                  <span className={styles.price_period}>/ 년</span>
-                </div>
-              </div>
-              <div className={styles.card_features}>
-                <div className={styles.feature_item}>
-                  스탠다드 플랜 모든 기능
-                </div>
-                <div className={styles.feature_item}>무제한 커스터마이징</div>
-                <div className={styles.feature_item}>무제한 스토리지</div>
-                <div className={styles.feature_item}>전담 매니저</div>
-              </div>
-            </div>
+          <div className={styles.pricing_image}>
+            <img
+              src="/src/assets/images/pricing/todayworkings_pricing_banner_2.png"
+              alt="기본 제공"
+              className={styles.pricing_card_image}
+            />
           </div>
         </div>
       </section>
