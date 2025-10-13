@@ -8,7 +8,7 @@ export default function About() {
       <section className={styles.hero_section}>
         <div className={styles.hero_image}>
           <img
-            src="/src/assets/images/about/todayworkings_about_banner.jpg"
+            src="/images/about/todayworkings_about_banner.jpg"
             alt="오늘의작업장"
           />
         </div>
