@@ -19,7 +19,7 @@ export default function Sign() {
         <ScrollAnimationContainer>
           <div className={styles.hero_image}>
             <img
-              src="/src/assets/images/sign/todayworkings_sign_banner.png"
+              src="/images/sign/todayworkings_sign_banner.png"
               alt="오늘의작업장"
             />
           </div>
@@ -43,7 +43,7 @@ export default function Sign() {
               </div>
               <div className={styles.feature_image}>
                 <img
-                  src="/src/assets/images/sign/sign_cross_image_1.gif"
+                  src="/images/sign/sign_cross_image_1.gif"
                   alt="결재현황 확인"
                   className={styles.mobile_image}
                 />
@@ -60,7 +60,7 @@ export default function Sign() {
             <div className={styles.feature_grid_reverse}>
               <div className={styles.feature_image}>
                 <img
-                  src="/src/assets/images/sign/sign_cross_image_2.gif"
+                  src="/images/sign/sign_cross_image_2.gif"
                   alt="서명하기"
                   className={styles.mobile_image}
                 />
@@ -93,7 +93,7 @@ export default function Sign() {
               </div>
               <div className={styles.feature_image}>
                 <img
-                  src="/src/assets/images/sign/sign_cross_image_3.png"
+                  src="/images/sign/sign_cross_image_3.png"
                   alt="카카오톡 서명 알림"
                   className={styles.mobile_image}
                 />
@@ -124,7 +124,7 @@ export default function Sign() {
               <div className={styles.daily_worker_item}>
                 <div className={styles.daily_worker_image_container}>
                   <img
-                    src="/src/assets/images/sign/sign_daily-worker_image_1.png"
+                    src="/images/sign/sign_daily-worker_image_1.png"
                     alt="참석자 추가하기"
                     className={styles.daily_worker_image}
                   />
@@ -143,7 +143,7 @@ export default function Sign() {
               <div className={styles.daily_worker_item}>
                 <div className={styles.daily_worker_image_container}>
                   <img
-                    src="/src/assets/images/sign/sign_daily-worker_image_2.png"
+                    src="/images/sign/sign_daily-worker_image_2.png"
                     alt="참석자 확인용 서명 입력"
                     className={styles.daily_worker_image}
                   />
@@ -164,7 +164,7 @@ export default function Sign() {
               <div className={styles.daily_worker_item}>
                 <div className={styles.daily_worker_image_container}>
                   <img
-                    src="/src/assets/images/sign/sign_daily-worker_image_3.png"
+                    src="/images/sign/sign_daily-worker_image_3.png"
                     alt="카카오톡 알림 보내기"
                     className={styles.daily_worker_image}
                   />
@@ -185,7 +185,7 @@ export default function Sign() {
               <div className={styles.daily_worker_item}>
                 <div className={styles.daily_worker_image_container}>
                   <img
-                    src="/src/assets/images/sign/sign_daily-worker_image_4.png"
+                    src="/images/sign/sign_daily-worker_image_4.png"
                     alt="서명 현황 바로 확인"
                     className={styles.daily_worker_image}
                   />
@@ -224,7 +224,7 @@ export default function Sign() {
               <div className={styles.daily_worker_item}>
                 <div className={styles.daily_worker_image_container}>
                   <img
-                    src="/src/assets/images/sign/sign_remote-process_image_1.png"
+                    src="/images/sign/sign_remote-process_image_1.png"
                     alt="카카오톡 서명 발송"
                     className={styles.daily_worker_image}
                   />
@@ -245,7 +245,7 @@ export default function Sign() {
               <div className={styles.daily_worker_item}>
                 <div className={styles.daily_worker_image_container}>
                   <img
-                    src="/src/assets/images/sign/sign_remote-process_image_2.png"
+                    src="/images/sign/sign_remote-process_image_2.png"
                     alt="참석자 확인용 서명 입력"
                     className={styles.daily_worker_image}
                   />
@@ -266,7 +266,7 @@ export default function Sign() {
               <div className={styles.daily_worker_item}>
                 <div className={styles.daily_worker_image_container}>
                   <img
-                    src="/src/assets/images/sign/sign_remote-process_image_3.png"
+                    src="/images/sign/sign_remote-process_image_3.png"
                     alt="본인인증"
                     className={styles.daily_worker_image}
                   />
@@ -285,7 +285,7 @@ export default function Sign() {
               <div className={styles.daily_worker_item}>
                 <div className={styles.daily_worker_image_container}>
                   <img
-                    src="/src/assets/images/sign/sign_remote-process_image_4.png"
+                    src="/images/sign/sign_remote-process_image_4.png"
                     alt="TBM 회의록 확인"
                     className={styles.daily_worker_image}
                   />

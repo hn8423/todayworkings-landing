@@ -27,7 +27,7 @@ export default function Service() {
 
   const handleDownloadBrochure = () => {
     const link = document.createElement("a");
-    link.href = "/src/assets/오늘의작업장 서비스 소개서.pdf";
+    link.href = "/files/오늘의작업장 서비스 소개서.pdf";
     link.download = "오늘의작업장 서비스 소개서.pdf";
     document.body.appendChild(link);
     link.click();
@@ -133,7 +133,7 @@ export default function Service() {
                   </div>
                   <div className={styles.feature_image}>
                     <img
-                      src="/src/assets/images/service/service_image_1.png"
+                      src="/images/service/service_image_1.png"
                       alt="APP 서비스"
                     />
                   </div>
@@ -161,7 +161,7 @@ export default function Service() {
                   </div>
                   <div className={styles.feature_image}>
                     <img
-                      src="/src/assets/images/service/service_image_2.png"
+                      src="/images/service/service_image_2.png"
                       alt="BACKOFFICE 관리자페이지"
                     />
                   </div>
@@ -183,7 +183,7 @@ export default function Service() {
             <ScrollAnimationContainer>
               <div className={styles.characteristic_item}>
                 <img
-                  src="/src/assets/images/service/service_character_image_1.png"
+                  src="/images/service/service_character_image_1.png"
                   alt="서비스 특징 1"
                   className={styles.characteristic_image}
                 />
@@ -193,7 +193,7 @@ export default function Service() {
             <ScrollAnimationContainer>
               <div className={styles.characteristic_item}>
                 <img
-                  src="/src/assets/images/service/service_character_image_2.png"
+                  src="/images/service/service_character_image_2.png"
                   alt="서비스 특징 2"
                   className={styles.characteristic_image}
                 />
@@ -203,7 +203,7 @@ export default function Service() {
             <ScrollAnimationContainer>
               <div className={styles.characteristic_item}>
                 <img
-                  src="/src/assets/images/service/service_character_image_3.png"
+                  src="/images/service/service_character_image_3.png"
                   alt="서비스 특징 3"
                   className={styles.characteristic_image}
                 />
@@ -213,7 +213,7 @@ export default function Service() {
             <ScrollAnimationContainer>
               <div className={styles.characteristic_item}>
                 <img
-                  src="/src/assets/images/service/service_character_image_4.png"
+                  src="/images/service/service_character_image_4.png"
                   alt="서비스 특징 4"
                   className={styles.characteristic_image}
                 />
@@ -223,7 +223,7 @@ export default function Service() {
             <ScrollAnimationContainer>
               <div className={styles.characteristic_item}>
                 <img
-                  src="/src/assets/images/service/service_character_image_5.png"
+                  src="/images/service/service_character_image_5.png"
                   alt="서비스 특징 5"
                   className={styles.characteristic_image}
                 />
@@ -233,7 +233,7 @@ export default function Service() {
             <ScrollAnimationContainer>
               <div className={styles.characteristic_item}>
                 <img
-                  src="/src/assets/images/service/service_character_image_6.png"
+                  src="/images/service/service_character_image_6.png"
                   alt="서비스 특징 6"
                   className={styles.characteristic_image}
                 />
@@ -261,7 +261,7 @@ export default function Service() {
                 </div>
                 <div className={styles.document_item_image}>
                   <img
-                    src="/src/assets/images/service/service_document_image_1.png"
+                    src="/images/service/service_document_image_1.png"
                     alt="TBM 회의록"
                     className={styles.document_image}
                   />
@@ -283,7 +283,7 @@ export default function Service() {
                 </div>
                 <div className={styles.document_item_image}>
                   <img
-                    src="/src/assets/images/service/service_document_image_2.png"
+                    src="/images/service/service_document_image_2.png"
                     alt="안전작업허가서"
                     className={styles.document_image}
                   />
@@ -305,7 +305,7 @@ export default function Service() {
                 </div>
                 <div className={styles.document_item_image}>
                   <img
-                    src="/src/assets/images/service/service_document_image_3.png"
+                    src="/images/service/service_document_image_3.png"
                     alt="JSA 위험성평가"
                     className={styles.document_image}
                   />
@@ -321,7 +321,7 @@ export default function Service() {
                 </div>
                 <div className={styles.document_item_image}>
                   <img
-                    src="/src/assets/images/service/service_document_image_4.png"
+                    src="/images/service/service_document_image_4.png"
                     alt="점검표"
                     className={styles.document_image}
                   />

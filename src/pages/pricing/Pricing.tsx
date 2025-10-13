@@ -20,28 +20,28 @@ export default function Pricing() {
           <div className={styles.plans_banner_container}>
             <div className={styles.banner_item}>
               <img
-                src="/src/assets/images/pricing/pricing_small_banner_1.png"
+                src="/images/pricing/pricing_small_banner_1.png"
                 alt="기본 제공"
                 className={styles.banner_image}
               />
             </div>
             <div className={styles.banner_item}>
               <img
-                src="/src/assets/images/pricing/pricing_small_banner_2.png"
+                src="/images/pricing/pricing_small_banner_2.png"
                 alt="B2B 계약"
                 className={styles.banner_image}
               />
             </div>
             <div className={styles.banner_item}>
               <img
-                src="/src/assets/images/pricing/pricing_small_banner_3.png"
+                src="/images/pricing/pricing_small_banner_3.png"
                 alt="부가서비스"
                 className={styles.banner_image}
               />
             </div>
             <div className={styles.banner_item}>
               <img
-                src="/src/assets/images/pricing/pricing_small_banner_4.png"
+                src="/images/pricing/pricing_small_banner_4.png"
                 alt="사용량 기반 결제"
                 className={styles.banner_image}
               />
@@ -67,7 +67,7 @@ export default function Pricing() {
             </div>
             <div className={styles.feature_image}>
               <img
-                src="/src/assets/images/pricing/todayworkings_pricing_banner.png"
+                src="/images/pricing/todayworkings_pricing_banner.png"
                 alt="오늘의작업장 커스터마이징 서비스"
                 className={styles.customizing_image}
               />
@@ -94,7 +94,7 @@ export default function Pricing() {
               <div className={styles.process_item}>
                 <div className={styles.process_image_container}>
                   <img
-                    src="/src/assets/images/pricing/pricing_process_image_1.png"
+                    src="/images/pricing/pricing_process_image_1.png"
                     alt="도입 문의"
                     className={styles.process_image}
                   />
@@ -115,7 +115,7 @@ export default function Pricing() {
               <div className={styles.process_item}>
                 <div className={styles.process_image_container}>
                   <img
-                    src="/src/assets/images/pricing/pricing_process_image_2.png"
+                    src="/images/pricing/pricing_process_image_2.png"
                     alt="킥오프 미팅"
                     className={styles.process_image}
                   />
@@ -136,7 +136,7 @@ export default function Pricing() {
               <div className={styles.process_item}>
                 <div className={styles.process_image_container}>
                   <img
-                    src="/src/assets/images/pricing/pricing_process_image_3.png"
+                    src="/images/pricing/pricing_process_image_3.png"
                     alt="프로젝트 시작"
                     className={styles.process_image}
                   />
@@ -156,7 +156,7 @@ export default function Pricing() {
               <div className={styles.process_item}>
                 <div className={styles.process_image_container}>
                   <img
-                    src="/src/assets/images/pricing/pricing_process_image_4.png"
+                    src="/images/pricing/pricing_process_image_4.png"
                     alt="시범운영 및 QA 회의"
                     className={styles.process_image}
                   />
@@ -179,7 +179,7 @@ export default function Pricing() {
               <div className={styles.process_item}>
                 <div className={styles.process_image_container}>
                   <img
-                    src="/src/assets/images/pricing/pricing_process_image_5.png"
+                    src="/images/pricing/pricing_process_image_5.png"
                     alt="현장 테스트 및 피드백"
                     className={styles.process_image}
                   />
@@ -199,7 +199,7 @@ export default function Pricing() {
               <div className={styles.process_item}>
                 <div className={styles.process_image_container}>
                   <img
-                    src="/src/assets/images/pricing/pricing_process_image_6.png"
+                    src="/images/pricing/pricing_process_image_6.png"
                     alt="현장 도입 및 계약 진행"
                     className={styles.process_image}
                   />
@@ -219,7 +219,7 @@ export default function Pricing() {
               <div className={styles.process_item}>
                 <div className={styles.process_image_container}>
                   <img
-                    src="/src/assets/images/pricing/pricing_process_image_7.png"
+                    src="/images/pricing/pricing_process_image_7.png"
                     alt="유지보수 및 추가요청"
                     className={styles.process_image}
                   />
@@ -255,7 +255,7 @@ export default function Pricing() {
           </p>
           <div className={styles.pricing_image}>
             <img
-              src="/src/assets/images/pricing/todayworkings_pricing_banner_2.png"
+              src="/images/pricing/todayworkings_pricing_banner_2.png"
               alt="기본 제공"
               className={styles.pricing_card_image}
             />
