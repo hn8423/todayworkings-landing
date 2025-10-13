@@ -17,6 +17,7 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  position: relative;
 }
 
 .blank {
@@ -38,6 +39,9 @@
   display: flex;
   align-items: center;
   padding: 16px 0px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .nav_item {
@@ -188,8 +192,11 @@
   background: none;
   border: none;
   cursor: pointer;
+  padding: 8px;
   border-radius: 4px;
   transition: background-color 0.2s ease;
+  position: absolute;
+  right: 0;
 
   &:hover {
     background-color: rgba(57, 136, 255, 0.1);
@@ -344,6 +351,10 @@
 
 // Responsive Design
 @media (max-width: 768px) {
+  .header_content {
+    padding: 0 16px;
+  }
+
   // 데스크톱 네비게이션 숨기기
   .nav {
     display: none;

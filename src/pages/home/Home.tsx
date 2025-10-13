@@ -9,47 +9,47 @@ export default function Home() {
   // 파트너 이미지 데이터
   const partnerImages = [
     {
-      src: "/src/assets/images/home/home_infinite_banner_1.png",
+      src: "/images/home/home_infinite_banner_1.png",
       alt: "banner_1",
       name: "banner_1",
     },
     {
-      src: "/src/assets/images/home/home_infinite_banner_2.png",
+      src: "/images/home/home_infinite_banner_2.png",
       alt: "banner_2",
       name: "banner_2",
     },
     {
-      src: "/src/assets/images/home/home_infinite_banner_3.png",
+      src: "/images/home/home_infinite_banner_3.png",
       alt: "banner_3",
       name: "banner_3",
     },
     {
-      src: "/src/assets/images/home/home_infinite_banner_4.png",
+      src: "/images/home/home_infinite_banner_4.png",
       alt: "banner_4",
       name: "banner_4",
     },
     {
-      src: "/src/assets/images/home/home_infinite_banner_5.png",
+      src: "/images/home/home_infinite_banner_5.png",
       alt: "banner_5",
       name: "banner_5",
     },
     {
-      src: "/src/assets/images/home/home_infinite_banner_6.png",
+      src: "/images/home/home_infinite_banner_6.png",
       alt: "banner_6",
       name: "banner_6",
     },
     {
-      src: "/src/assets/images/home/home_infinite_banner_7.png",
+      src: "/images/home/home_infinite_banner_7.png",
       alt: "banner_7",
       name: "banner_7",
     },
     {
-      src: "/src/assets/images/home/home_infinite_banner_8.png",
+      src: "/images/home/home_infinite_banner_8.png",
       alt: "banner_8",
       name: "banner_8",
     },
     {
-      src: "/src/assets/images/home/home_infinite_banner_9.png",
+      src: "/images/home/home_infinite_banner_9.png",
       alt: "banner_9",
       name: "banner_9",
     },
@@ -99,7 +99,7 @@ export default function Home() {
       <ScrollAnimationContainer>
         <div className={styles.hero_image}>
           <img
-            src="/src/assets/images/home/todayworkings_home_banner.png"
+            src="/images/home/todayworkings_home_banner.png"
             alt="오늘의작업장"
           />
         </div>
@@ -114,7 +114,7 @@ export default function Home() {
                 <div className={styles.feature_item}>
                   <div className={styles.feature_image}>
                     <img
-                      src="/src/assets/images/home/home_computer.png"
+                      src="/images/home/home_computer.png"
                       alt="종이 보관을 위한 물리적인 장소 없음"
                     />
                   </div>
@@ -127,7 +127,7 @@ export default function Home() {
                 <div className={styles.feature_item}>
                   <div className={styles.feature_image}>
                     <img
-                      src="/src/assets/images/home/home_document.png"
+                      src="/images/home/home_document.png"
                       alt="종이 보관을 위한 물리적인 장소 없음"
                     />
                   </div>
@@ -139,7 +139,7 @@ export default function Home() {
                 <div className={styles.feature_item}>
                   <div className={styles.feature_image}>
                     <img
-                      src="/src/assets/images/home/home_graph.png"
+                      src="/images/home/home_graph.png"
                       alt="종이 보관을 위한 물리적인 장소 없음"
                     />
                   </div>
@@ -152,7 +152,7 @@ export default function Home() {
                 <div className={styles.feature_item}>
                   <div className={styles.feature_image}>
                     <img
-                      src="/src/assets/images/home/home_bell.png"
+                      src="/images/home/home_bell.png"
                       alt="종이 보관을 위한 물리적인 장소 없음"
                     />
                   </div>
@@ -165,7 +165,7 @@ export default function Home() {
                 <div className={styles.feature_item}>
                   <div className={styles.feature_image}>
                     <img
-                      src="/src/assets/images/home/home_inspect.png"
+                      src="/images/home/home_inspect.png"
                       alt="종이 보관을 위한 물리적인 장소 없음"
                     />
                   </div>
@@ -178,7 +178,7 @@ export default function Home() {
                 <div className={styles.feature_item}>
                   <div className={styles.feature_image}>
                     <img
-                      src="/src/assets/images/home/home_highfive.png"
+                      src="/images/home/home_highfive.png"
                       alt="종이 보관을 위한 물리적인 장소 없음"
                     />
                   </div>
@@ -246,7 +246,7 @@ export default function Home() {
           <ScrollAnimationContainer width={isMobile ? "100%" : "65%"}>
             <div className={styles.benefits_image}>
               <img
-                src="/src/assets/images/home/todayworkings_home_2nd_banner.png"
+                src="/images/home/todayworkings_home_2nd_banner.png"
                 alt="benefits_image"
               />
             </div>
@@ -269,7 +269,7 @@ export default function Home() {
               <ScrollAnimationContainer>
                 <div className={styles.stats_icon}>
                   <img
-                    src="/src/assets/images/home/home_money_and_clock.png"
+                    src="/images/home/home_money_and_clock.png"
                     alt="시간과 비용 절감"
                   />
                 </div>

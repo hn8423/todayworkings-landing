@@ -21,7 +21,7 @@ export default function Backoffice() {
       <ScrollAnimationContainer>
         <div className={styles.hero_image}>
           <img
-            src="/src/assets/images/backoffice/todayworkings_backoffice_banner.png"
+            src="/images/backoffice/todayworkings_backoffice_banner.png"
             alt="오늘의작업장"
           />
         </div>
@@ -67,7 +67,7 @@ export default function Backoffice() {
               </div>
               <div className={styles.feature_image}>
                 <img
-                  src="/src/assets/images/backoffice/backoffice_cross_image_1.png"
+                  src="/images/backoffice/backoffice_cross_image_1.png"
                   alt="실시간 통계현황"
                   className={styles.mobile_image}
                 />
@@ -84,7 +84,7 @@ export default function Backoffice() {
             <div className={styles.feature_grid_reverse}>
               <div className={styles.feature_image}>
                 <img
-                  src="/src/assets/images/backoffice/backoffice_cross_image_2.png"
+                  src="/images/backoffice/backoffice_cross_image_2.png"
                   alt="현장서류 조회 및 엑셀 다운로드"
                   className={styles.mobile_image}
                 />
@@ -136,7 +136,7 @@ export default function Backoffice() {
               </div>
               <div className={styles.feature_image}>
                 <img
-                  src="/src/assets/images/backoffice/backoffice_cross_image_3.png"
+                  src="/images/backoffice/backoffice_cross_image_3.png"
                   alt="관리자 가입 승인·반려"
                   className={styles.mobile_image}
                 />
@@ -153,7 +153,7 @@ export default function Backoffice() {
             <div className={styles.feature_grid_reverse}>
               <div className={styles.feature_image}>
                 <img
-                  src="/src/assets/images/backoffice/backoffice_cross_image_4.png"
+                  src="/images/backoffice/backoffice_cross_image_4.png"
                   alt="가입한 회원 관리"
                   className={styles.mobile_image}
                 />
@@ -192,7 +192,7 @@ export default function Backoffice() {
               </div>
               <div className={styles.feature_image}>
                 <img
-                  src="/src/assets/images/backoffice/backoffice_cross_image_5.png"
+                  src="/images/backoffice/backoffice_cross_image_5.png"
                   alt="공지사항 등록·관리"
                   className={styles.mobile_image}
                 />

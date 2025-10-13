@@ -29,7 +29,7 @@ export default function Document() {
       <ScrollAnimationContainer>
         <div className={styles.hero_image}>
           <img
-            src="/src/assets/images/document/todayworkings_document_banner.png"
+            src="/images/document/todayworkings_document_banner.png"
             alt="오늘의작업장"
           />
         </div>
@@ -50,7 +50,7 @@ export default function Document() {
               </div>
               <div className={styles.feature_image}>
                 <img
-                  src="/src/assets/images/document/document_cross_image_1.png"
+                  src="/images/document/document_cross_image_1.png"
                   alt="현장서류 확인하기"
                   className={styles.mobile_image}
                 />
@@ -67,7 +67,7 @@ export default function Document() {
             <div className={styles.feature_grid_reverse}>
               <div className={styles.feature_image}>
                 <img
-                  src="/src/assets/images/document/document_cross_image_2.gif"
+                  src="/images/document/document_cross_image_2.gif"
                   alt="필터 기능으로 원하는 서류만 확인하기"
                   className={styles.mobile_image}
                 />
@@ -108,7 +108,7 @@ export default function Document() {
               </div>
               <div className={styles.feature_image}>
                 <img
-                  src="/src/assets/images/document/document_cross_image_3.png"
+                  src="/images/document/document_cross_image_3.png"
                   alt="서명 확인도 여기서 바로!"
                   className={styles.mobile_image}
                 />
@@ -132,7 +132,7 @@ export default function Document() {
               <div className={styles.process_item}>
                 <div className={styles.process_image}>
                   <img
-                    src="/src/assets/images/document/document_process_image_1.png"
+                    src="/images/document/document_process_image_1.png"
                     alt="일반/화기 선택"
                     className={styles.process_mobile_image}
                   />
@@ -151,7 +151,7 @@ export default function Document() {
               <div className={styles.process_item}>
                 <div className={styles.process_image}>
                   <img
-                    src="/src/assets/images/document/document_process_image_2.png"
+                    src="/images/document/document_process_image_2.png"
                     alt="허가관련"
                     className={styles.process_mobile_image}
                   />
@@ -170,7 +170,7 @@ export default function Document() {
               <div className={styles.process_item}>
                 <div className={styles.process_image}>
                   <img
-                    src="/src/assets/images/document/document_process_image_3.png"
+                    src="/images/document/document_process_image_3.png"
                     alt="안전조치 요구사항"
                     className={styles.process_mobile_image}
                   />
@@ -191,7 +191,7 @@ export default function Document() {
               <div className={styles.process_item}>
                 <div className={styles.process_image}>
                   <img
-                    src="/src/assets/images/document/document_process_image_4.png"
+                    src="/images/document/document_process_image_4.png"
                     alt="안전보호구, 장비 준비사항"
                     className={styles.process_mobile_image}
                   />
@@ -212,7 +212,7 @@ export default function Document() {
               <div className={styles.process_item}>
                 <div className={styles.process_image}>
                   <img
-                    src="/src/assets/images/document/document_process_image_5.png"
+                    src="/images/document/document_process_image_5.png"
                     alt="보충작업 허가"
                     className={styles.process_mobile_image}
                   />
@@ -231,7 +231,7 @@ export default function Document() {
               <div className={styles.process_item}>
                 <div className={styles.process_image}>
                   <img
-                    src="/src/assets/images/document/document_process_image_6.png"
+                    src="/images/document/document_process_image_6.png"
                     alt="가스농도 측정(화기/밀폐)"
                     className={styles.process_mobile_image}
                   />
@@ -252,7 +252,7 @@ export default function Document() {
               <div className={styles.process_item}>
                 <div className={styles.process_image}>
                   <img
-                    src="/src/assets/images/document/document_process_image_7.png"
+                    src="/images/document/document_process_image_7.png"
                     alt="결재담당자 지정"
                     className={styles.process_mobile_image}
                   />
@@ -271,7 +271,7 @@ export default function Document() {
               <div className={styles.process_item}>
                 <div className={styles.process_image}>
                   <img
-                    src="/src/assets/images/document/document_process_image_8.png"
+                    src="/images/document/document_process_image_8.png"
                     alt="작업허가 연장"
                     className={styles.process_mobile_image}
                   />
@@ -297,7 +297,7 @@ export default function Document() {
             <div className={styles.document_type_item}>
               <div className={styles.document_type_image_container}>
                 <img
-                  src="/src/assets/images/document/document_cross_image_4.png"
+                  src="/images/document/document_cross_image_4.png"
                   alt="작업위험성평가"
                   className={styles.document_type_image}
                 />
@@ -320,7 +320,7 @@ export default function Document() {
             <div className={styles.document_type_item}>
               <div className={styles.document_type_image_container}>
                 <img
-                  src="/src/assets/images/document/document_cross_image_5.png"
+                  src="/images/document/document_cross_image_5.png"
                   alt="작업위험성평가"
                   className={styles.document_type_image}
                 />
@@ -342,7 +342,7 @@ export default function Document() {
             <div className={styles.document_type_item}>
               <div className={styles.document_type_image_container}>
                 <img
-                  src="/src/assets/images/document/document_cross_image_6.png"
+                  src="/images/document/document_cross_image_6.png"
                   alt="TBM 회의록"
                   className={styles.document_type_image}
                 />
@@ -366,7 +366,7 @@ export default function Document() {
             <div className={styles.document_type_item}>
               <div className={styles.document_type_image_container}>
                 <img
-                  src="/src/assets/images/document/document_cross_image_7.png"
+                  src="/images/document/document_cross_image_7.png"
                   alt="안전서약서"
                   className={styles.document_type_image}
                 />
