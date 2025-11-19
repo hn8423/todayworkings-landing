@@ -59,8 +59,6 @@ export default function Home() {
     window.scrollTo(0, 0);
 
     const handleResize = () => {
-      // console.log("innerWidth:", window.innerWidth);
-      // console.log("innerHeight:", window.innerHeight);
       if (window.innerWidth < 1024) {
         setIsMobile(true);
       } else {
