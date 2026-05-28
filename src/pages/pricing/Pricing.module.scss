@@ -233,94 +233,189 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
+  align-items: start;
+  text-align: left;
 }
 
 .pricing_card {
   background: white;
-  border: 2px solid #e5e7eb;
-  border-radius: 16px;
-  padding: 40px 30px;
-  transition: all 0.3s ease;
-  position: relative;
+  border: 1px solid #eef0f3;
+  border-radius: 20px;
+  padding: 40px 34px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 24px rgba(17, 24, 39, 0.06);
 
   &:hover {
-    border-color: #3988ff;
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(57, 136, 255, 0.15);
+    box-shadow: 0 14px 32px rgba(17, 24, 39, 0.1);
   }
 
-  &:nth-child(2) {
+  &.highlighted {
+    background: #3988ff;
     border-color: #3988ff;
-    transform: scale(1.05);
+    box-shadow: 0 14px 34px rgba(57, 136, 255, 0.35);
 
-    &::before {
-      content: "인기";
-      position: absolute;
-      top: -15px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: #3988ff;
-      color: white;
-      padding: 8px 20px;
-      border-radius: 20px;
-      font-size: 14px;
-      font-weight: 600;
+    .plan_name,
+    .price_amount,
+    .price_prefix,
+    .price_unit,
+    .spec_row,
+    .features_label,
+    .feature_row span,
+    .recommended_label,
+    .recommend_row {
+      color: #ffffff;
+    }
+
+    .plan_desc,
+    .price_monthly {
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    .spec_row {
+      border-bottom-color: rgba(255, 255, 255, 0.25);
+    }
+
+    .plan_badge {
+      background: #ffffff;
+      color: #3988ff;
+    }
+
+    .check_icon {
+      color: rgba(255, 255, 255, 0.35);
+
+      path {
+        stroke: #ffffff;
+      }
     }
   }
 }
 
-.card_header {
-  margin-bottom: 30px;
+.plan_name_row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .plan_name {
   font-size: 24px;
   font-weight: 700;
   color: #1a1a1a;
-  margin: 0 0 20px 0;
+  margin: 0;
 }
 
-.plan_price {
+.plan_badge {
+  display: inline-block;
+  background: #e8f4ff;
+  color: #3988ff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 5px 10px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.plan_desc {
+  font-size: 14px;
+  color: #8a93a3;
+  margin: 8px 0 24px 0;
+  line-height: 1.4;
+}
+
+.price_block {
   display: flex;
   align-items: baseline;
-  justify-content: center;
-  gap: 5px;
+  gap: 4px;
+}
+
+.price_prefix {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1a1a;
 }
 
 .price_amount {
-  font-size: 48px;
+  font-size: 34px;
+  font-weight: 800;
+  color: #1a1a1a;
+  letter-spacing: -0.5px;
+}
+
+.price_unit {
+  font-size: 16px;
   font-weight: 700;
+  color: #1a1a1a;
+}
+
+.price_monthly {
+  font-size: 13px;
+  color: #8a93a3;
+  margin: 6px 0 24px 0;
+}
+
+.spec_row {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1a1a1a;
+  padding: 14px 0;
+  border-bottom: 1px solid #f1f5f9;
+
+  &:first-of-type {
+    border-top: 1px solid #f1f5f9;
+  }
+}
+
+.features_label {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 24px 0 14px 0;
+}
+
+.feature_list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.feature_row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #374151;
+}
+
+.check_icon {
+  flex-shrink: 0;
   color: #3988ff;
 }
 
-.price_period {
-  font-size: 18px;
-  color: #666;
+.recommended_label {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 24px 0 14px 0;
 }
 
-.card_features {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.feature_item {
-  padding: 12px 0;
-  border-bottom: 1px solid #f1f5f9;
-  font-size: 16px;
-  color: #374151;
-
-  &:last-child {
-    border-bottom: none;
-  }
+.recommend_row {
+  position: relative;
+  padding-left: 14px;
+  font-size: 14px;
+  color: #565656;
+  line-height: 1.5;
 
   &::before {
-    content: "✓";
-    color: #3988ff;
-    font-weight: 600;
-    margin-right: 10px;
+    content: "·";
+    position: absolute;
+    left: 2px;
+    font-weight: 700;
   }
 }
 
@@ -394,9 +489,10 @@
   .pricing_cards {
     grid-template-columns: 1fr;
     gap: 30px;
+    max-width: 480px;
   }
 
-  .pricing_card:nth-child(2) {
+  .pricing_card.highlighted {
     transform: none;
   }
 }
@@ -435,7 +531,7 @@
   }
 
   .price_amount {
-    font-size: 36px;
+    font-size: 30px;
   }
 
   .contact_subtitle {
@@ -489,11 +585,7 @@
   }
 
   .price_amount {
-    font-size: 32px;
-  }
-
-  .feature_item {
-    font-size: 14px;
+    font-size: 28px;
   }
 
   .contact_subtitle {
