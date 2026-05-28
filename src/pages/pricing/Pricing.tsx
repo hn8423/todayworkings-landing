@@ -1,4 +1,27 @@
 import styles from "./Pricing.module.scss";
+import { pricingPlans } from "./pricingPlans";
+
+function CheckIcon() {
+  return (
+    <svg
+      className={styles.check_icon}
+      viewBox="0 0 20 20"
+      width="20"
+      height="20"
+      aria-hidden="true"
+    >
+      <circle cx="10" cy="10" r="10" fill="currentColor" />
+      <path
+        d="M5.8 10.2l2.7 2.7 5.7-5.8"
+        fill="none"
+        stroke="#fff"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
 
 export default function Pricing() {
   return (
@@ -253,12 +276,52 @@ export default function Pricing() {
           <p className={styles.section_subtitle}>
             * 기본 스토리지 초과, 서류 커스터마이징 가격 별도
           </p>
-          <div className={styles.pricing_image}>
-            <img
-              src="/images/pricing/todayworkings_pricing_banner_2.png"
-              alt="기본 제공"
-              className={styles.pricing_card_image}
-            />
+          <div className={styles.pricing_cards}>
+            {pricingPlans.map((plan) => (
+              <div
+                key={plan.name}
+                className={`${styles.pricing_card} ${
+                  plan.highlighted ? styles.highlighted : ""
+                }`}
+              >
+                <div className={styles.plan_name_row}>
+                  <h3 className={styles.plan_name}>{plan.name}</h3>
+                  {plan.badge && (
+                    <span className={styles.plan_badge}>⭐ {plan.badge}</span>
+                  )}
+                </div>
+                <p className={styles.plan_desc}>{plan.description}</p>
+
+                <div className={styles.price_block}>
+                  <span className={styles.price_prefix}>연</span>
+                  <span className={styles.price_amount}>{plan.priceAnnual}</span>
+                  <span className={styles.price_unit}>원</span>
+                </div>
+                <p className={styles.price_monthly}>({plan.priceMonthly})</p>
+
+                <div className={styles.spec_row}>{plan.documents}</div>
+                <div className={styles.spec_row}>{plan.storage}</div>
+
+                <p className={styles.features_label}>포함되는 기능</p>
+                <ul className={styles.feature_list}>
+                  {plan.features.map((feature) => (
+                    <li key={feature} className={styles.feature_row}>
+                      <CheckIcon />
+                      <span>{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <p className={styles.recommended_label}>✅ 추천 기업</p>
+                <ul className={styles.feature_list}>
+                  {plan.recommended.map((item) => (
+                    <li key={item} className={styles.recommend_row}>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
         </div>
       </section>
