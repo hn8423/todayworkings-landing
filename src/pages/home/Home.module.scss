@@ -8,6 +8,10 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 40px;
+
+  @media (max-width: 768px) {
+    padding: 0 20px;
+  }
 }
 
 // Hero Section
@@ -415,7 +419,13 @@
     text-align: left;
 
     @media (max-width: 768px) {
+      justify-content: center;
       text-align: center;
+
+      // 애니메이션 래퍼가 내용 폭으로 줄어 왼쪽으로 쏠리는 문제 방지
+      > div {
+        width: 100%;
+      }
     }
   }
 
@@ -538,7 +548,7 @@
   }
 
   .youtube_container {
-    padding: 0 20px;
+    padding: 0;
   }
 
   .youtube_wrapper {
