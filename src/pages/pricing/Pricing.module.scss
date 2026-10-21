@@ -474,6 +474,15 @@
     }
   }
 
+  // 1열에서 row_4 → row_3 사이만 간격이 벌어지지 않도록 item 간격과 맞춤
+  .process_content {
+    gap: 10px;
+  }
+
+  .process_title_row {
+    margin-bottom: 50px;
+  }
+
   .process_row_4,
   .process_row_3 {
     flex-direction: column;

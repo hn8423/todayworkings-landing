@@ -304,6 +304,11 @@
     text-align: center;
   }
 
+  // 1열에서는 항상 텍스트가 이미지보다 먼저 오도록
+  .feature_grid_reverse .feature_content {
+    order: -1;
+  }
+
   .daily_worker_grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;

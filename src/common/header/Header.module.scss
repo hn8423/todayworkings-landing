@@ -242,12 +242,17 @@
   height: 100vh;
   background-color: #ffffff;
   z-index: 1002;
-  transition: right 0.3s ease;
-  box-shadow: -4px 0 12px rgba(0, 0, 0, 0.15);
+  // 닫힌 상태에서 그림자가 화면 가장자리로 번지지 않도록 숨김
+  visibility: hidden;
+  box-shadow: none;
+  transition: right 0.3s ease, visibility 0s linear 0.3s;
   overflow-y: auto;
 
   &.mobile_menu_open {
     right: 0;
+    visibility: visible;
+    box-shadow: -4px 0 12px rgba(0, 0, 0, 0.15);
+    transition: right 0.3s ease, visibility 0s;
   }
 }
 
