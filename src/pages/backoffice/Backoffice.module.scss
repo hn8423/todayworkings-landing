@@ -163,6 +163,12 @@
   width: 100%;
   height: 100%;
   aspect-ratio: 1/1;
+
+  // 1열에서는 가로형 대시보드 이미지 위아래 빈 공간이 생기지 않도록 비율 고정 해제
+  @media (max-width: 1024px) {
+    height: auto;
+    aspect-ratio: auto;
+  }
 }
 
 .mobile_image {
@@ -177,12 +183,10 @@
   }
 
   @media (max-width: 768px) {
-    max-width: 300px;
     border-radius: 15px;
   }
 
   @media (max-width: 480px) {
-    max-width: 250px;
     border-radius: 12px;
   }
 }
@@ -265,6 +269,11 @@
     grid-template-columns: 1fr;
     gap: 50px;
     text-align: center;
+  }
+
+  // 1열에서는 항상 텍스트가 이미지보다 먼저 오도록
+  .feature_grid_reverse .feature_content {
+    order: -1;
   }
 }
 
