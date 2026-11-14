@@ -1,28 +1,13 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import styles from "./Service.module.scss";
 import { ScrollAnimationContainer } from "../../feature/scrollAnimation/ScrollAnimationContainer";
+import { useIsMobile } from "../../hooks/useIsMobile";
 
 export default function Service() {
-  const [isMobile, setIsMobile] = useState(false);
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     window.scrollTo(0, 0);
-
-    const handleResize = () => {
-      // console.log("innerWidth:", window.innerWidth);
-      // console.log("innerHeight:", window.innerHeight);
-      if (window.innerWidth < 1024) {
-        setIsMobile(true);
-      } else {
-        setIsMobile(false);
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
   }, []);
 
   const handleDownloadBrochure = () => {
