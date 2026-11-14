@@ -1,10 +1,11 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import styles from "./Home.module.scss";
+import { useIsMobile } from "../../hooks/useIsMobile";
 import { ScrollAnimationContainer } from "../../feature/scrollAnimation/ScrollAnimationContainer";
 import { InfiniteScroll } from "../../common/infiniteScroll/InfiniteScroll";
 
 export default function Home() {
-  const [isMobile, setIsMobile] = useState(false);
+  const isMobile = useIsMobile();
 
   // 파트너 이미지 데이터
   const partnerImages = [
@@ -57,20 +58,6 @@ export default function Home() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-
-    const handleResize = () => {
-      if (window.innerWidth < 1024) {
-        setIsMobile(true);
-      } else {
-        setIsMobile(false);
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
   }, []);
 
   return (
